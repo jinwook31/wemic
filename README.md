@@ -11,7 +11,7 @@ We made Game contents which is fun(FUNCEPT), enable to take selfie with various 
 ## What it does
 **MEMIC** is mimicry motion ranking game with 2 play mode.
 
-'''
+```
       1. Battle Mode
 	- Purpose : To meet the need of teens who want to play challenging game
 	- How to Play
@@ -24,7 +24,7 @@ We made Game contents which is fun(FUNCEPT), enable to take selfie with various 
 	- How to Play
 	   1) Pick your favorite and fancy posture
            2) Take a Cute Selfie with your ZEPETO
-'''	   
+```	   
 
 
 ## How we built it
