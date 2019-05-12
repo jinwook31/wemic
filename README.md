@@ -10,6 +10,8 @@ We made Game contents which is fun(FUNCEPT), enable to take selfie with various 
 
 ## What it does
 **MEMIC** is mimicry motion ranking game with 2 play mode.
+
+'''
       1. Battle Mode
 	- Purpose : To meet the need of teens who want to play challenging game
 	- How to Play
@@ -22,12 +24,14 @@ We made Game contents which is fun(FUNCEPT), enable to take selfie with various 
 	- How to Play
 	   1) Pick your favorite and fancy posture
            2) Take a Cute Selfie with your ZEPETO
+'''	   
+
 
 ## How we built it
        1. ZEPETO Render API - PhotoBoothID
-	 : produce our own ZEPETO images and also list various ZEPETO postures
+	: produce our own ZEPETO images and also list various ZEPETO postures
        2. NAVER Cloud AI Service - Position Estimation
-         : compare real-state posture via camera with selected ZEPETO's posture by applying NAVER Cloud's Position Estimation API
+	: compare real-state posture via camera with selected ZEPETO's posture by applying NAVER Cloud's Position Estimation API
 
 ## Challenges we ran into
 We had a hard time to raise the accuracy of detecting the exact coordinate value with Position Estimation API.  
