@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contents %}
+    <div style="height:30%; width:100%; margin-top:10%; margin-bottom:5%; text-align: center;">
+        <img src="{% static 'comp/mimic_logo.png' %}" alt="mimic_logo">
+    </div>
+<br>
+
+<div style="text-align: center;">
+    <a style="position:absolute" href="{% url 'challenge-urls:select_pic' 0 %}">
+        <img src="{%  static 'comp/battlemode.png' %}" alt="battlemode">
+    </a>
+    <a style="margin-left: 700px;" href="{% url 'challenge-urls:select_pic' 1 %}">
+        <img src="{%  static 'comp/photomode.png' %}" alt="photomode">
+    </a>
+</div>
+
+{% endblock %}

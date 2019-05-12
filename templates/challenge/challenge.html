@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/challenge.css' %}">
+{% endblock %}
+{% block scripts %}
+    <script src="{% static 'js/webcam.min.js' %}"></script>
+    <script src="{% static 'js/challenge.js' %}"></script>
+{% endblock %}
+{% block contents %}
+
+   <div id = "side_leftTop">
+        <img src="{% static 'comp/mimic_logo.png' %}" alt="mimic_logo" style=" margin-top:5%; margin-left:5%; margin-bottom:5%; height:50px; float:left;"/>
+        <h3 style="color:white; float:left; margin-top:5%;">&nbsp; &nbsp; &nbsp; HOME > Battle mode > Start</h3>
+    </div>
+
+    <div id = "side_left"></div>
+
+    <div id = "mid_content">
+        <div id="my_camera" style="margin-top:200px;"></div>
+        <div id="overlayTxt" ></div>
+        <img id="success" src="{% static 'comp/SUCCESS_2.png' %}" alt="mimic_logo">
+        <div id="overlayImg">
+            <img id="photo" src="http://47.74.149.35/api/photo/{{ PHOTOBOOTH_ID }}?hashCodes=QPKZDJ&width=400" alt="mimic_logo">
+        </div>
+        <div id="overlayImg1">
+        </div>
+        <div id="overlayCueImg"></div>
+        <div id="notifyTxt"><h1>Remember the posture!!</h1></div>
+    </div>
+{% endblock %}

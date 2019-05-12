@@ -1,0 +1,431 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block scripts %}
+    <script>
+    $(document).ready(function() {
+        $('.col-md-2').on('click', function() {
+            var id = this.id;
+            {% if chal == True %}
+                var url = "{% url 'challenge-urls:challenge' 123 %}";
+            {% else %}
+                var url = "{% url 'challenge-urls:photo_mode' 123 %}";
+            {% endif %}
+
+            console.log(url);
+            // Construct the full URL with "id"
+            document.location.href = url.replace('123', id);
+        });
+    });
+    </script>
+{% endblock %}
+{% block contents %}
+<div style="height:30%; width:100%; margin-top:5%; margin-bottom:5%; text-align: center;">
+    <img src="{% static 'comp/mimic_logo.png' %}" alt="mimic_logo">
+</div>
+<br>
+
+<div class="album py-5">
+    <div class="container" style="margin-left:10%; margin-right:10%; max-width:fit-content">
+
+      <div class="row">
+        <div class="col-md-2" id="3VInepqJ3GQmMmOiQegkkm">
+           <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_49.png' %}" height="225" class="img grayscale img-responsive">
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">1-1</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="31YtRTeRqwYia4GE8EoSI0">
+           <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_54.png' %}" height="225" class="img grayscale img-responsive">
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">1-2</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="2GUPPPVatyMAia8AogyiOm">
+           <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_88.png'  %}" height="225" class="img grayscale img-responsive">
+{#            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2250/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>#}
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">1-3</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="6EyetlDJJeaE4GqqE2SWA2">
+           <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_93.png' %}" height="225" class="img grayscale img-responsive">
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">1-4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="U89rGP1dSgQaGYawUW6WQ">
+           <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_94.png' %}" height="225" class="img grayscale img-responsive">
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">1-5</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="235maqIHre4usWykIScomM">
+           <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/success_mouseover.png' %}" height="225" class="img grayscale img-responsive">
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">1-6</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="4hmxOr0YGGt8UiDBFpcC88">
+           <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_97.png'  %}" height="225" class="img grayscale img-responsive">
+{#            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2250/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>#}
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">2-1</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="2TubJKfnzgV6Q8iI18lEuE">
+           <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_109.png' %}" height="225" class="img grayscale img-responsive">
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">2-2</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="3rpFtrzGY1jxn0ZLR57RTf">
+           <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_121.png' %}" height="225" class="img grayscale img-responsive">
+                        <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">2-3</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="6GJUGqkmfbETSeif9iHjbF">
+          <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_133.png'  %}" height="225" class="img grayscale img-responsive">
+{#            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2250/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>#}
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">2-4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="4G4lLRtQ6mRwlkfVIF67Pu">
+          <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_178.png'  %}" height="225" class="img grayscale img-responsive">
+{#            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2250/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>#}
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">2-5</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                     
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="KBXyE9NNLn76sYKVsKQ7y">
+          <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_202.png'  %}" height="225" class="img grayscale img-responsive">
+{#            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2250/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>#}
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">2-6</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                     
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="2DT6Vh5Uumyt9aropSzCpz">
+          <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_209.png'  %}" height="225" class="img grayscale img-responsive">
+{#            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2250/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>#}
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">3-1</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                     
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="1YMo0aqH0fd1kcMnxa3bZm">
+          <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_229.png'  %}" height="225" class="img grayscale img-responsive">
+{#            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2250/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>#}
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">3-2</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                     
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="6OnrT0VZuvwQdrorycGAA9">
+          <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_237.png'  %}" height="225" class="img grayscale img-responsive">
+{#            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2250/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>#}
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">3-3</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                     
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="5C4sYsgELgJzIogR2PAqLq">
+          <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_240.png'  %}" height="225" class="img grayscale img-responsive">
+{#            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2250/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>#}
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">3-4</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                     
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="3ASO7EaWsuhuxSWTo9Ue0q">
+          <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_243.png'  %}" height="225" class="img grayscale img-responsive">
+{#            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2250/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>#}
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">3-5</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                     
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" id="47swpTcwKqpvdkBfIX3sZg">
+          <div class="card mb-2 shadow-sm" style="cursor:pointer;">
+            <img src="{% static 'img/Picture/PHOTOBOOTH_ONE_248.png'  %}" height="225" class="img grayscale img-responsive">
+{#            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2250/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>#}
+            <div class="card-body" style="padding-right:0px;">
+                <div class="col-sm-8" style="float:left;">
+                  <p class="card-text">3-6</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <i class="fas fa-heart" style="font-size: small;">&nbsp; 670</i>
+                    <i class="fas fa-comment-alt" style="font-size: small;">&nbsp; 92</i>
+                  </div>
+                </div>
+                <div class="col-sm-4" style="float:right; position: relative; text-align: center; padding-left:0px;">
+                     
+                    <img src="{% static 'comp/purple_dot.png' %}" alt="num_circle" style="width:100%;">
+
+                    <div style="position: absolute; top: 50%; left: 40%; transform: translate(-50%, -50%);">
+                        <small>80%</small>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
