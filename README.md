@@ -1,4 +1,4 @@
-# wemic
+# WEMIC
 Junction X Seoul 2019
 MEMIC, ZEPETO In-app mini game to earn coins
 
