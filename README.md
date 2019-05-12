@@ -28,10 +28,8 @@ We made Game contents which is fun(FUNCEPT), enable to take selfie with various 
 
 
 ## How we built it
-       1. ZEPETO Render API - PhotoBoothID
-	: produce our own ZEPETO images and also list various ZEPETO postures
-       2. NAVER Cloud AI Service - Position Estimation
-	: compare real-state posture via camera with selected ZEPETO's posture by applying NAVER Cloud's Position Estimation API
+       1. ZEPETO Render API - PhotoBoothID: produce our own ZEPETO images and also list various ZEPETO postures
+       2. NAVER Cloud AI Service - Position Estimation: compare real-state posture via camera with selected ZEPETO's posture by applying NAVER Cloud's Position Estimation API
 
 ## Challenges we ran into
 We had a hard time to raise the accuracy of detecting the exact coordinate value with Position Estimation API.  
